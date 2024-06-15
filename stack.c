@@ -3,9 +3,18 @@
 
 #define MAX_SIZE 100
 
+// Definición de un nodo de la lista enlazada
+typedef struct Node {
+    int data;
+    struct Node *next;
+} Node;
+
+typedef Node *TypePointer; // Puntero al tipo de dato del nodo
+
+// Definición del stack
 typedef struct {
-    int arr[MAX_SIZE];
-    int top; // índice del elemento superior de la pila
+    TypePointer items[MAX_SIZE];
+    int top;
 } Stack;
 
 // Inicializar el stack
@@ -13,18 +22,11 @@ void initialize(Stack *s) {
     s->top = -1; // indica stack vacío
 }
 
-int isFull(Stack *s) {
-    return s->top == MAX_SIZE - 1;
-}
-
-void push(Stack *s, int value) {
-    if (isFull(s)){
-        printf("Stack Overflow: No se pueden agregar más elementos a la pila.\n");
-        return;
-    }
-    s->arr[++(s->top)] = value; // se incrementa el índice del elemento superior y luego se agrega el valor
-}
-
 int main() {
     Stack s;
+    initialize(&s);
+
+    // Aquí se puede añadir más código para manipular el stack
+
+    return 0;
 }
