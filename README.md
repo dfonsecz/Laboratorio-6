@@ -27,7 +27,14 @@ Primero, se compila el programa con el uso de makefile, el cual produce el archi
 
 Al ingresar un número como argumento, se ejecuta adecuadamente el programa. Primero, se presenta la pila predeterminada. Luego, se indica al usuario que se va a añadir el elemento que ingresó a la pila y se imprime la pila, ahora actualizada, de nuevo. Este elemento se añade en la parte superior, por medio de la función `push`.
 
+Posteriormente, para utilizar la función de `pop` se elimina el elemento superior de la pila, el cual es el que ingresó el usuario. En la imagen se observa que después de notificar que eliminará este elemento, la pila ahora ya no lo incluye.
+
+Se hace uso de la función `peak` al imprimir los elementos de la pila.
+
 ![Funcionalidad](images/1.png)
+
+Para confirmar que el programa no presenta leaks de memoria, se ejecuta el programa valgrind. En la imagen se observa el reporte que indica que no hay errores.
+
 ![Valgrind](images/2.png)
 
 ## Conclusiones y recomendaciones
