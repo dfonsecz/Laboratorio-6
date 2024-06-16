@@ -24,6 +24,9 @@ Por otra parte, esta función tiene el comportamiento opuesto a la anterior. Ret
 Una vez hecho esto, se almacena el valor del nodo `head` en la variable `data` y se ajusta `head` al nodo siguiente, lo que hace que se elimine el nodo de la pila. Finalmente, se libera la memoria del nodo eliminado `temp` y se retorna el valor del nodo eliminado.
 
 #### peek()
+
+Para la función `peek`, el propósito es que retorne valor del elemento en una posición específica indicada, pero sin eliminar este valor como en la función anterior. Primero, se inicializa un puntero que apunta a `head` y se recorre la pila con un for loop hasta la posición deseada.
+
 #### isEmpty()
 
 ### stack.h
