@@ -1,32 +1,38 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-#define MAX_SIZE 100
-
-// Definición de un nodo de la lista enlazada
-typedef struct Node {
-    int data;
-    struct Node *next;
-} Node;
-
-typedef Node *TypePointer; // Puntero al tipo de dato del nodo
-
-// Definición del stack
-typedef struct {
-    TypePointer items[MAX_SIZE];
-    int top;
-} Stack;
+#include "stack.h"
 
 // Inicializar el stack
 void initialize(Stack *s) {
-    s->top = -1; // indica stack vacío
+    s->head = NULL; // indica stack vacío
 }
 
-int main() {
-    Stack s;
-    initialize(&s);
+// Agregar un elemento a la parte superior de la pila
+void push(Stack *s, int data) {
+    Node *newNode = (Node *)malloc(sizeof(Node));
+    if (newNode == NULL) {
+        printf("Stack overflow\n");
+        return;
+    }
+    newNode->data = data;
+    newNode->next = s->head;
+    s->head = newNode;
+}
 
-    // Aquí se puede añadir más código para manipular el stack
+// Devuelve el elemento en una parte dada de la pila sin eliminarlo
+int peek(Stack *s, int position) {
+    Node *pointer = s->head;
+    for (int i = 0; i < position - 1 && pointer != NULL; i++) {
+        pointer = pointer->next;
+    }
+    if (pointer != NULL) {
+        return pointer->data;
+    } else {
+        return -1; // Indica que la posición no es válida
+    }
+}
 
-    return 0;
+// Revisa si la pila está vacía
+int isEmpty(Stack *s) {
+    return s->head == NULL;
 }
