@@ -25,9 +25,11 @@ Una vez hecho esto, se almacena el valor del nodo `head` en la variable `data` y
 
 #### peek()
 
-Para la función `peek`, el propósito es que retorne valor del elemento en una posición específica indicada, pero sin eliminar este valor como en la función anterior. Primero, se inicializa un puntero que apunta a `head` y se recorre la pila con un for loop hasta la posición deseada.
+Para la función `peek`, el propósito es que retorne valor del elemento en una posición específica indicada, pero sin eliminar este valor como en la función anterior. Primero, se inicializa un puntero que apunta a `head` y se recorre la pila con un for loop hasta la posición deseada. Finalmente, se retorna el valor del nodo para la posición especificada.
 
 #### isEmpty()
+
+Esta función verifica si el Stack se encuentra vacío. Para esto compara el valor `head` con `'NULL`. Retorna valores enteros 0, si la pila no está vacía y 1 si lo está.
 
 ### stack.h
 ### main.c
@@ -55,3 +57,6 @@ Para confirmar que el programa no presenta leaks de memoria, se ejecuta el progr
 ## Conclusiones y recomendaciones
 
 ## Referencias
+
+[1] “Programación II - 26/04/2013 - Clase 4 - Listas Enlazadas en C,” sites.google.com. https://sites.google.com/site/programacioniiuno/mi-cursada/bitacoras/26042013-clase4-listasenlazadasenc (accesado Jun. 16, 2024).
+‌
