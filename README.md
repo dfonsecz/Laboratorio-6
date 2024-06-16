@@ -33,7 +33,7 @@ Se hace uso de la función `peak` al imprimir los elementos de la pila.
 
 ![Funcionalidad](images/1.png)
 
-Para confirmar que el programa no presenta leaks de memoria, se ejecuta el programa valgrind. En la imagen se observa el reporte que indica que no hay errores.
+Para confirmar que el programa no presenta leaks de memoria, se ejecuta el programa valgrind. En la imagen se observa el reporte que indica que no hay errores. Además, se hace uso de la función de clean del makefile para eliminar los archivos que fueron generados por el programa.
 
 ![Valgrind](images/2.png)
 
