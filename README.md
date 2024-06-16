@@ -1,6 +1,6 @@
-## Universidad de Costa Rica
-### IE0117 Programación Bajo Plataformas Abiertas
-### B93070 Daniela Fonseca Zumbado
+### Universidad de Costa Rica
+#### IE0117 Programación Bajo Plataformas Abiertas
+#### B93070 Daniela Fonseca Zumbado
 
 # Laboratorio-6
 
@@ -11,6 +11,10 @@ El objetivo del laboratorio es desarrollar un programa que utilice estas listas 
 
 ## Implementación
 ### stack.c
+En primer lugar, incluye una función para inicializar la pila. Además, incluye las siguientes funciones:
+
+#### push()
+
 ### stack.h
 ### main.c
 ### Makefile
