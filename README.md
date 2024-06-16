@@ -18,6 +18,11 @@ Esta función tiene el propósito de agregar un elemento a la parte superior de 
 Después de esto, se establece que el puntero `next` apunte al nodo que es actualmente el `head`. Además, se actualiza el puntero `head` para que apunte al nuevo nodo.
 
 #### pop()
+
+Por otra parte, esta función tiene el comportamiento opuesto a la anterior. Retorna y elimina el elemento en la parte superior de la pila. Después de verificar que la pila no esté vacía, se almacena la dirección del nodo `head` en un puntero `temp` para asegurarse de no perder la referencia a este nodo.
+
+Una vez hecho esto, se almacena el valor del nodo `head` en la variable `data` y se ajusta `head` al nodo siguiente, lo que hace que se elimine el nodo de la pila. Finalmente, se libera la memoria del nodo eliminado `temp` y se retorna el valor del nodo eliminado.
+
 #### peek()
 #### isEmpty()
 
