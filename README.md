@@ -21,6 +21,9 @@ En primer lugar, incluye una función para inicializar la pila. Además, incluye
 
 ## Resultados
 
+![Funcionalidad](images/1.png)
+![Valgrind](images/2.png)
+
 ## Conclusiones y recomendaciones
 
 ## Referencias
