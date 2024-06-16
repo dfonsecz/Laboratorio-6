@@ -21,6 +21,8 @@ En primer lugar, incluye una función para inicializar la pila. Además, incluye
 
 ## Resultados
 Primero, se compila el programa con el uso de makefile, el cual produce el archivo ejecutable 'main'. En la imagen se puede observar que al ejecutar este archivo sin ingresar un argumento, la respuesta del programa es pedirle al usuario que lo ingrese.
+
+Al ingresar un número como argumento, se ejecuta adecuadamente el programa. Primero, se presenta la pila predeterminada. Luego, se indica al usuario que se va a añadir el elemento que ingresó a la pila. Este se añade en la parte superior.
 ![Funcionalidad](images/1.png)
 ![Valgrind](images/2.png)
 
