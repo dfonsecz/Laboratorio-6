@@ -5,15 +5,18 @@
 # Laboratorio-6
 
 ## Introducción
-En este laboratorio se aborda el uso de Listas Doblemente Enlazadas y de memoria dinámica.
-
-El objetivo del laboratorio es desarrollar un programa que utilice estas listas para manipular el contenido del Stack.
+En este laboratorio se explora el uso de Listas Doblemente Enlazadas y de memoria dinámica. El propósito principal del laboratorio es desarrollar e implementar un programa que utilice estas listas para manipular el contenido de una estructura tipo Stack.
 
 ## Implementación
 ### stack.c
 En primer lugar, incluye una función para inicializar la pila. Además, incluye las siguientes funciones:
 
 #### push()
+
+Esta función tiene el propósito de agregar un elemento a la parte superior de la pila utilizando una estructura de datos enlazada. En primer lugar, se hace la asignación de la memoria con el uso de malloc, y se verifica que se haya hecho esta asignación de forma correcta. Se inicializa un nuevo nodo y se asigna el valor proporcionado como argumento `data` a la variable del mismo modo de este nodo.
+
+Después de esto, se establece que el puntero `next` apunte al nodo que es actualmente el `head`. Además, se actualiza el puntero `head` para que apunte al nuevo nodo.
+
 #### pop()
 #### peek()
 #### isEmpty()
