@@ -32,6 +32,8 @@ Para la función `peek`, el propósito es que retorne valor del elemento en una 
 Esta función verifica si el Stack se encuentra vacío. Para esto compara el valor `head` con `'NULL`. Retorna valores enteros 0, si la pila no está vacía y 1 si lo está.
 
 ### stack.h
+
+Este archivo incluye el header que usan tanto `stack.c` como `main.c`.
 ### main.c
 ### Makefile
 
@@ -55,6 +57,9 @@ Para confirmar que el programa no presenta leaks de memoria, se ejecuta el progr
 ![Valgrind](images/2.png)
 
 ## Conclusiones y recomendaciones
+
+1. Se concluye, como primer punto,
+2. Como recomendación, es importante liberar la memoria de los nodos eliminados para evitar que haya problemas con la memoria.
 
 ## Referencias
 
