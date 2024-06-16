@@ -33,9 +33,15 @@ Esta función verifica si el Stack se encuentra vacío. Para esto compara el val
 
 ### stack.h
 
-Este archivo incluye el header que usan tanto `stack.c` como `main.c`.
+Este archivo incluye el header que usan tanto `stack.c` como `main.c`. Define las estructuras necesarias para implementar y manipular la pila con el uso de listas enlazadas. Define la estructura de un nodo y de la pila. Además, especifica las funciones que se pueden utilizar para manipular la pila, que son las que se describieron anteriormente.
+
 ### main.c
+
+Este programa está diseñado para probar la funcionalidad de las funciones creadas en `stack.c`. Primero inicializa la pila y agrega algunos elementos de forma predeterminada. Luego agrega el elemento especificado por el usuario al inicio de la pila, y después procede a eliminarlo.
+
 ### Makefile
+
+El Makefile elaborado especifica las reglas para compilar el programa en `main`. Define las reglas para compilación de archivos `.c` a archivos objeto `.o`, y los relaciona. Además incluye el objetivo de `valgrind` para simplificar el proceso de verificación de memoria, y el de `clean` para eliminar los archivos `.o` y `main` una vez concluida la ejecución del código.
 
 ## Resultados
 
@@ -58,8 +64,8 @@ Para confirmar que el programa no presenta leaks de memoria, se ejecuta el progr
 
 ## Conclusiones y recomendaciones
 
-1. Se concluye, como primer punto,
-2. Como recomendación, es importante liberar la memoria de los nodos eliminados para evitar que haya problemas con la memoria.
+1. Se concluye que la implementación de una pila utilizando listas doblemente enlazadas en C ha sido efectiva para demostrar las operaciones básicas de esta estructura de datos fundamental. Por medio de las funciones diseñadas en el programa, se logró manipular la pila al agregar, eliminar y referenciar elementos en esta.
+2. Como recomendación, es importante liberar la memoria de los nodos eliminados para evitar que haya problemas de fuga de memoria.
 
 ## Referencias
 
