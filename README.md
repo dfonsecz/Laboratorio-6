@@ -20,7 +20,7 @@ En primer lugar, incluye una función para inicializar la pila. Además, incluye
 ### Makefile
 
 ## Resultados
-Primero, se compila el programa con el uso de makefile, el cual produce el archivo ejecutable 'main'.
+Primero, se compila el programa con el uso de makefile, el cual produce el archivo ejecutable 'main'. En la imagen se puede observar que al ejecutar este archivo sin ingresar un argumento, la respuesta del programa es pedirle al usuario que lo ingrese.
 ![Funcionalidad](images/1.png)
 ![Valgrind](images/2.png)
 
